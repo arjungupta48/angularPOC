@@ -1,0 +1,8 @@
+<a routerLink ="/dashboard">Dashboard</a><br/>
+
+<h2>Students List</h2><br/>
+<ul *ngFor="let student of students">
+  <li>Id: {{student.id}}</li>
+  <li>Name: {{student.name}}</li>
+  <li>Gender: {{student.gender}}</li>
+</ul>

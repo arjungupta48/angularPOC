@@ -1,0 +1,10 @@
+<p>
+  You are now authenticated! <br/><br/>
+  <a routerLink ="/employees">Employee Details</a><br/>
+  <a routerLink ="/student-list">Student Details</a>
+</p>
+
+<ul>
+  <li *ngFor = "let item of collection | paginate: { itemsPerPage:10, currentPage:p }">{{item}}</li>
+</ul>
+<pagination-controls (pageChange)="p =$event"></pagination-controls>
